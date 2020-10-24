@@ -7,6 +7,7 @@ Vim with VSCode inspirations
 ![print](vimascode.png)
 
 ## Requirements
+- [vim-plug](https://github.com/junegunn/vim-plug/)
 - ctags
 - python3 (python 2 is optional)
 - pynvim
