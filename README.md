@@ -1,9 +1,15 @@
 # Vim aS Code
 
-## Vim with VSCode inspirations
+Vim with VSCode inspirations
 
-## Pre requeriments
-...
+## Prints
+
+![print](vimascode.png)
+
+## Requirements
+- ctags
+- python3 (python 2 is optional)
+- pynvim
 
 ### NeoVim
 ```sh
