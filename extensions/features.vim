@@ -1,4 +1,4 @@
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }	" https://github.com/Shougo/deoplete.nvim
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }	" https://github.com/Shougo/deoplete.nvim
 
 Plug 'jiangmiao/auto-pairs'					" https://github.com/jiangmiao/auto-pairs
 Plug 'tpope/vim-surround' 					" https://github.com/tpope/vim-surround
