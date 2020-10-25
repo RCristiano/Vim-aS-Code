@@ -1,26 +1,39 @@
 # Vim aS Code
 
-Vim with VSCode inspirations
+NeoVim with VSCode inspiration
 
 ## Prints
 
 ![print](vimascode.png)
  
 ## Requirements
+- [NeoVim](https://github.com/neovim/neovim)
 - [vim-plug](https://github.com/junegunn/vim-plug/)
-- ctags [universal-ctags](https://github.com/universal-ctags/ctags)
-- python3 (python 2 is optional)
-- pynvim (for python)
+- [ctags](https://github.com/universal-ctags/ctags)
 
+* Some language especific extensions have its own requirements
+
+### Python
+- [pynvim](https://github.com/neovim/pynvim)
+- python3
+
+### GO
+
+Go extensions was configured using this [guide](https://octetz.com/docs/2019/2019-04-24-vim-as-a-go-ide/).
 
 ## Instalation
 
 ### NeoVim
+
+Move init.vim file and extensions folder to ~/.config/nvim/
+
 ```sh
-mv init.vim ~/.config/init.vim
+mv init.vim ~/.config/nvim/
+mv -r extensions ~/.config/nvim/
 ```
 
-### Vim
-```sh
-mv init.vim ~/.vimrc
+Then run:
+
+```
+:PlugInstall
 ```
