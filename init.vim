@@ -1,64 +1,80 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'davidhalter/jedi-vim'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'jiangmiao/auto-pairs'
-Plug 'scrooloose/nerdcommenter'
-Plug 'sbdchd/neoformat'
-Plug 'scrooloose/nerdtree'
-Plug 'neomake/neomake'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'machakann/vim-highlightedyank'
-Plug 'tmhedberg/SimpylFold'
+" Python
+" --------------------------------------------------------------
+" Plug 'davidhalter/jedi-vim' 					" https://github.com/davidhalter/jedi
+" Plug 'zchee/deoplete-jedi'					" https://github.com/deoplete-plugins/deoplete-jedi
+" Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}		" https://github.com/numirias/semshi
+" Plug 'jmcantrell/vim-virtualenv'				" https://github.com/jmcantrell/vim-virtualenv
+" Plug 'tmhedberg/SimpylFold'					" https://github.com/tmhedberg/SimpylFold
 
-Plug 'morhetz/gruvbox'
-Plug 'sickill/vim-monokai'
-Plug 'phanviet/vim-monokai-pro'
-Plug 'sainnhe/sonokai'
 
-" Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'ryanoasis/vim-devicons'
-Plug 'tpope/vim-fugitive'
-Plug 'majutsushi/tagbar'
-Plug 'scrooloose/syntastic'
-Plug 'tpope/vim-surround'
-Plug 'xuyuanp/nerdtree-git-plugin'
-Plug 'powerline/powerline'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'myusuf3/numbers.vim'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
-Plug 'wincent/terminus'
-Plug 'voldikss/vim-floaterm'
-Plug 'airblade/vim-gitgutter'
-Plug 'mhinz/vim-signify'
-Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'}
-Plug 'jmcantrell/vim-virtualenv'
-Plug 'thaerkh/vim-workspace'
-Plug 'kien/ctrlp.vim'
+" Features
+" --------------------------------------------------------------
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }	" https://github.com/Shougo/deoplete.nvim
+
+" Verify if both of these are required
+Plug 'vim-airline/vim-airline'					" https://github.com/vim-airline/vim-airline
+Plug 'powerline/powerline'					" https://github.com/powerline/powerline
+
+Plug 'jiangmiao/auto-pairs'					" https://github.com/jiangmiao/auto-pairs
+Plug 'tpope/vim-surround' 					" https://github.com/tpope/vim-surround
+Plug 'scrooloose/nerdcommenter'					" https://github.com/preservim/nerdcommenter
+Plug 'sbdchd/neoformat'						" https://github.com/sbdchd/neoformat
+Plug 'scrooloose/nerdtree'					" https://github.com/preservim/nerdtree
+Plug 'neomake/neomake'						" https://github.com/neomake/neomake
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " https://github.com/mg979/vim-visual-multi
+Plug 'machakann/vim-highlightedyank'				" https://github.com/machakann/vim-highlightedyank
+
+" Verify if both of these are required
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }		" https://github.com/junegunn/fzf
+Plug 'kien/ctrlp.vim'						" https://github.com/kien/ctrlp.vim
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }		" https://github.com/Yggdroot/LeaderF
+
+Plug 'majutsushi/tagbar' 					" https://github.com/preservim/tagbar
+Plug 'tpope/vim-fugitive'					" https://github.com/tpope/vim-fugitive
+Plug 'scrooloose/syntastic'					" https://github.com/vim-syntastic/syntastic
+Plug 'xuyuanp/nerdtree-git-plugin'				" https://github.com/Xuyuanp/nerdtree-git-plugin
+Plug 'myusuf3/numbers.vim'					" https://github.com/myusuf3/numbers.vim
+Plug 'godlygeek/tabular'					" https://github.com/godlygeek/tabular
+Plug 'thaerkh/vim-workspace'					" https://github.com/thaerkh/vim-workspace
+
+" This is breaking markdown fold! -- FIX REQUIRED
+" Plug 'plasticboy/vim-markdown'					" https://github.com/plasticboy/vim-markdown
+
+Plug 'wincent/terminus'						" https://github.com/wincent/terminus
+Plug 'airblade/vim-gitgutter'					" https://github.com/airblade/vim-gitgutter
+Plug 'mhinz/vim-signify'					" https://github.com/mhinz/vim-signify
+
+" Themes
+" --------------------------------------------------------------
+" Plug 'morhetz/gruvbox'					" https://github.com/morhetz/gruvbox
+" Plug 'vim-airline/vim-airline-themes'				" https://github.com/vim-airline/vim-airline-themes
+" Plug 'phanviet/vim-monokai-pro'				" https://github.com/phanviet/vim-monokai-pro
+" Plug 'sickill/vim-monokai'					" https://github.com/sickill/vim-monokai
+Plug 'sainnhe/sonokai'						" https://github.com/sainnhe/sonokai
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight' 			" https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+Plug 'ryanoasis/vim-devicons'   				" https://github.com/ryanoasis/vim-devicons
+
+
+" Plug 'voldikss/vim-floaterm'					" https://github.com/voldikss/vim-floaterm
 
 call plug#end()
 
+" Configs
+" --------------------------------------------------------------
+
 set shiftwidth=4
 
-let g:python_host_prog = '~/.asdf/shims/python2'
-let g:python3_host_prog = '~/.asdf/shims/python'
+" This configuration must be used when working with virtual envs
+" https://github.com/deoplete-plugins/deoplete-jedi#virtual-environments
+" let g:python_host_prog = '~/.asdf/shims/python2'
+" let g:python3_host_prog = '~/.asdf/shims/python'
 
 let g:deoplete#enable_at_startup = 1
 
 let g:airline_theme='sonokai' " <theme> is a valid theme name
 let g:airline_powerline_fonts = 1
-
-let g:airline_left_sep = "\uE0B8"
-let g:airline_right_sep = "\uE0BA"
-
-let g:airline#extensions#tabline#left_sep = "\uE0BC"
-let g:airline#extensions#tabline#right_sep = "\uE0BE"
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
@@ -66,9 +82,9 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-let g:floaterm_keymap_toggle = '<F12>'
-let g:floaterm_autoclose = 1
-nnoremap <leader>; :FloatermNew --wintype=window --height=10<CR>
+" let g:floaterm_keymap_toggle = '<F12>'
+" let g:floaterm_autoclose = 1
+" nnoremap <leader>; :FloatermNew --wintype=window --height=10<CR>
 
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
@@ -83,16 +99,8 @@ let g:neoformat_basic_format_retab = 1
 " Enable trimmming of trailing whitespace
 let g:neoformat_basic_format_trim = 1
 
-" disable autocompletion, cause we use deoplete for completion
-let g:jedi#completions_enabled = 0
-
-" open the go-to function in split, not another buffer
-let g:jedi#use_splits_not_buffers = "right"
-
-
-let g:neomake_python_enabled_makers = ['pylint']
-
 call neomake#configure#automake('nrwi', 500)
+
 
 hi HighlightedyankRegion cterm=reverse gui=reverse
 
@@ -102,6 +110,27 @@ let g:highlightedyank_highlight_duration = 1000
 set background=dark " use dark mode
 " set background=light " uncomment to use light mode
 
+" Python
+" --------------------------------------------------------------
+
+" disable autocompletion, cause we use deoplete for completion
+" let g:jedi#completions_enabled = 0 
+
+" open the go-to function in split, not another buffer
+" let g:jedi#use_splits_not_buffers = "right"
+
+" let g:neomake_python_enabled_makers = ['pylint']
+
+" --------------------------------------------------------------
+
+let g:airline_left_sep = "\uE0B8"
+let g:airline_right_sep = "\uE0BA"
+
+let g:airline#extensions#tabline#left_sep = "\uE0BC"
+let g:airline#extensions#tabline#right_sep = "\uE0BE"
+
+
+
 " Important!! For sonokai
 if has('termguicolors')
 	set termguicolors
@@ -110,7 +139,7 @@ endif
 let g:sonokai_style = 'andromeda'
 let g:sonokai_enable_italic = 1
 let g:sonokai_disable_italic_comment = 1
-let g:sonokai_transparent_background = 0
+let g:sonokai_transparent_background = 1
 
 colorscheme sonokai
 
@@ -161,3 +190,4 @@ let g:NERDToggleCheckAllLines = 1
 
 nmap <silent> <leader>bd :bd<CR>
 
+hi Normal guibg=NONE ctermbg=NONE
