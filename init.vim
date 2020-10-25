@@ -38,9 +38,7 @@ Plug 'xuyuanp/nerdtree-git-plugin'				" https://github.com/Xuyuanp/nerdtree-git-
 Plug 'myusuf3/numbers.vim'					" https://github.com/myusuf3/numbers.vim
 Plug 'godlygeek/tabular'					" https://github.com/godlygeek/tabular
 Plug 'thaerkh/vim-workspace'					" https://github.com/thaerkh/vim-workspace
-
-" This is breaking markdown fold! -- FIX REQUIRED
-" Plug 'plasticboy/vim-markdown'					" https://github.com/plasticboy/vim-markdown
+Plug 'plasticboy/vim-markdown'					" https://github.com/plasticboy/vim-markdown
 
 Plug 'wincent/terminus'						" https://github.com/wincent/terminus
 Plug 'airblade/vim-gitgutter'					" https://github.com/airblade/vim-gitgutter
@@ -65,6 +63,9 @@ call plug#end()
 " --------------------------------------------------------------
 
 set shiftwidth=4
+
+" This configuration is needed to fix broken auto-markdown
+let g:vim_markdown_folding_style_pythonic = 1
 
 " This configuration must be used when working with virtual envs
 " https://github.com/deoplete-plugins/deoplete-jedi#virtual-environments
