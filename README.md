@@ -12,7 +12,7 @@ NeoVim with VSCode inspiration
 - [ctags](https://github.com/universal-ctags/ctags)
 - [yarn](https://classic.yarnpkg.com/en/docs/install#debian-stable)
 
-* Some language especific extensions have its own requirements
+Some language especific extensions have its own requirements
 
 ## Instalation
 
