@@ -1,25 +1,30 @@
 # Vim aS Code
 
-Vim with VSCode inspirations
+NeoVim with VSCode inspiration
 
 ## Prints
 
 ![print](vimascode.png)
  
 ## Requirements
+- NeoVim
+- vim-plug
 - ctags
-- python3 (python 2 is optional)
-- pynvim
 
 
 ## Instalation
 
 ### NeoVim
+
+Move init.vim file and extensions folder to ~/.config/nvim/
+
 ```sh
-mv init.vim ~/.config/init.vim
+mv init.vim ~/.config/nvim/
+mv -r extensions ~/.config/nvim/
 ```
 
-### Vim
-```sh
-mv init.vim ~/.vimrc
+Then run:
+
+```
+:PlugInstall
 ```
