@@ -3,7 +3,7 @@ name: AutoMerge
 on:
   pull_request_review:
     branches:
-      - main
+      - master
     types:
       - submitted
 
