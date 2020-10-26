@@ -11,9 +11,10 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-" let g:floaterm_keymap_toggle = '<F12>'
-" let g:floaterm_autoclose = 1
-" nnoremap <leader>; :FloatermNew --wintype=window --height=10<CR>
+" Floaterm shortcuts
+let g:floaterm_keymap_toggle = '<F12>'
+let g:floaterm_autoclose = 1
+nnoremap <leader>; :FloatermNew --wintype=window --height=10<CR>
 
 " Enable alignment
 let g:neoformat_basic_format_align = 1
