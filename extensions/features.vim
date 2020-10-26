@@ -9,9 +9,6 @@ Plug 'neomake/neomake'						" https://github.com/neomake/neomake
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}             " https://github.com/mg979/vim-visual-multi
 Plug 'machakann/vim-highlightedyank'				" https://github.com/machakann/vim-highlightedyank
 
-" Verify if both of these are required
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }		" https://github.com/junegunn/fzf
-Plug 'kien/ctrlp.vim'						" https://github.com/kien/ctrlp.vim
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }		" https://github.com/Yggdroot/LeaderF
 
 Plug 'majutsushi/tagbar' 					" https://github.com/preservim/tagbar
@@ -26,6 +23,7 @@ Plug 'plasticboy/vim-markdown'					" https://github.com/plasticboy/vim-markdown
 Plug 'wincent/terminus'						" https://github.com/wincent/terminus
 Plug 'airblade/vim-gitgutter'					" https://github.com/airblade/vim-gitgutter
 Plug 'mhinz/vim-signify'					" https://github.com/mhinz/vim-signify
-" Plug 'voldikss/vim-floaterm'					" https://github.com/voldikss/vim-floaterm
+Plug 'voldikss/vim-floaterm'					" https://github.com/voldikss/vim-floaterm
 
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }		" https://github.com/neoclide/coc.nvim
 
