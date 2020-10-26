@@ -11,13 +11,12 @@ let g:airline#extensions#tabline#right_sep = "\uE0BE"
 if has('termguicolors')
 	set termguicolors
 endif
+
 " The configuration options should be placed before `colorscheme sonokai`.
 let g:sonokai_style = 'andromeda'
 let g:sonokai_enable_italic = 1
 let g:sonokai_disable_italic_comment = 1
 let g:sonokai_transparent_background = 0
-
-colorscheme sonokai
 
 hi HighlightedyankRegion cterm=reverse gui=reverse
 
@@ -26,4 +25,5 @@ set background=dark " use dark mode
 
 hi Normal guibg=NONE ctermbg=NONE
 
+colorscheme sonokai
 
