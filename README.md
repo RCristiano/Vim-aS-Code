@@ -65,3 +65,10 @@ and paste the content present in `coc-settings.json` present in this repo.
 ### Elixir
 
 Simply run `:CocInstall coc-elixir`
+
+## Test
+
+```sh
+docker build . -t vimascode
+docker run --it -v $PWD:/mnt/workdir vimascode
+```
