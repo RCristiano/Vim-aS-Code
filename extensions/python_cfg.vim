@@ -10,4 +10,5 @@ let g:jedi#completions_enabled = 0
 let g:jedi#use_splits_not_buffers = "right"
 let g:neomake_python_enabled_makers = ['pylint']
 
+let g:vimspector_install_gadgets += [ 'debugpy' ]
 

@@ -8,7 +8,6 @@ source $HOME/.config/nvim/extensions/python.vim
 source $HOME/.config/nvim/extensions/go.vim
 source $HOME/.config/nvim/extensions/elixir.vim
 
-
 call plug#end()
 
 " Configurations 

@@ -5,6 +5,8 @@ let g:go_def_mapping_enabled = 0
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
 
+let g:vimspector_install_gadgets += [ 'vscode-go' ]		" https://github.com/puremourning/vimspector#go
+
 " -------------------------------------------------------------------------------------------------
 " coc.nvim default settings
 " -------------------------------------------------------------------------------------------------
