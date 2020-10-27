@@ -26,4 +26,4 @@ Plug 'mhinz/vim-signify'					" https://github.com/mhinz/vim-signify
 Plug 'voldikss/vim-floaterm'					" https://github.com/voldikss/vim-floaterm
 
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }		" https://github.com/neoclide/coc.nvim
-
+Plug 'puremourning/vimspector'
