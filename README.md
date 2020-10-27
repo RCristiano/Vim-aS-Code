@@ -35,8 +35,13 @@ Then run:
 This repo uses coc.nvim, so its compatible with any of its available [language servers](https://github.com/neoclide/coc.nvim/wiki/Language-servers).
 
 ### Python
+
 - [pynvim](https://github.com/neovim/pynvim)
 - python3
+
+```sh
+vim +'CocInstall coc-python' +qa # Language server
+```
 
 ### GO
 
