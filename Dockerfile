@@ -14,4 +14,4 @@ RUN /usr/bin/nvim +'PlugInstall --sync' +qa
 
 WORKDIR /mnt/workdir
 
-ENTRYPOINT /usr/bin/nvim
+CMD /usr/bin/nvim
