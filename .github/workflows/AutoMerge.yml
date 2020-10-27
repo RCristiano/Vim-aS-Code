@@ -1,11 +1,9 @@
 name: AutoMerge
 
 on:
-  pull_request_review:
+  pull_request:
     branches:
       - master
-    types:
-      - submitted
 
 jobs:
   automerge:
@@ -14,6 +12,7 @@ jobs:
     steps:
       - uses: actions/github-script@v3.0.0
         with:
+          github-toke: ${{github.token}}
           script: |
             github.pullRequests.merge({
               owner: context.repo.owner,
