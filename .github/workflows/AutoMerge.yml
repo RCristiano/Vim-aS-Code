@@ -12,11 +12,11 @@ jobs:
     if: github.event.review.state == 'approved' || !github.event.review
     runs-on: ubuntu-latest
     steps:
-      - uses: reitermarkus/automerge@v1
+      - uses: actions/github-script@v3.0.0
         with:
-          token: ${{ github.token }}
-          merge-method: merge
-          do-not-merge-labels: never-merge, wip
-          required-labels: automerge
-          pull-request: ${{ github.event.inputs.pull-request }}
-          dry-run: true
+          script: |
+            github.pullRequests.merge({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number 
+            })
