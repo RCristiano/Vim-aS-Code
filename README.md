@@ -10,7 +10,6 @@ NeoVim with VSCode inspiration
 - [NeoVim](https://github.com/neovim/neovim)
 - [vim-plug](https://github.com/junegunn/vim-plug/)
 - [ctags](https://github.com/universal-ctags/ctags)
-- [yarn](https://classic.yarnpkg.com/en/docs/install#debian-stable)
 
 Some language especific extensions have its own requirements
 
