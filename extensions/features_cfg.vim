@@ -63,7 +63,22 @@ let g:NERDTrimTrailingWhitespace = 1
 let g:NERDToggleCheckAllLines = 1
 
 " Vimspector
-let g:vimspector_enable_mappings = 'HUMAN'
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 let g:vimspector_install_gadgets = []
 
+" Buffers shortcuts
+" To open a new empty buffer
+nmap <silent> <leader>{ :enew<cr>
 
+" Move to the next buffer
+nmap <silent> <leader>] :bnext<CR>
+
+" Move to the previous buffer
+nmap <silent> <leader>[ :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <silent> <leader>} :bp <BAR> bd #<CR>
+
+" Show all open buffers and their status
+" nmap <leader>bl :ls<CR>
