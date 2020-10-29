@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   automerge:
-    if: github.event.review.state == 'approved' || !github.event.review
+    if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/github-script@v3.0.0
