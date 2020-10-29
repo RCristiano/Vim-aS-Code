@@ -1,6 +1,9 @@
 name: AutoMerge
 
-on: pull_request
+on:
+  pull_request_review:
+    types:
+      - submitted
 
 jobs:
   automerge:
