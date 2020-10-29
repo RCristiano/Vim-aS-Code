@@ -3,10 +3,13 @@ FROM ubuntu:latest
 ARG DEBIAN_FRONTEND=noninteractive
 ARG TZ="America/Sao_Paulo"
 
-RUN apt-get update && apt-get install git curl nodejs neovim -y
+RUN apt-get update && apt-get install git curl nodejs neovim gnupg2 -y
 
 RUN sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
+    echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
+    apt install yarn -y
 
 COPY . /root/.config/nvim/
 
