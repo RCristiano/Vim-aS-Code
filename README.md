@@ -97,7 +97,7 @@ and paste the content present in `coc-settings.json` present in this repo.
 ```sh
 nvim +`CocInstall coc-elixir`
 ```
-Simply run `:CocInstall coc-elixir`
+
 
 ## Docker
 

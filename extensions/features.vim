@@ -1,5 +1,6 @@
 " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }	" https://github.com/Shougo/deoplete.nvim
 
+Plug 'mhinz/vim-startify'                   " https://github.com/mhinz/vim-startify
 Plug 'jiangmiao/auto-pairs'					" https://github.com/jiangmiao/auto-pairs
 Plug 'tpope/vim-surround' 					" https://github.com/tpope/vim-surround
 Plug 'scrooloose/nerdcommenter'					" https://github.com/preservim/nerdcommenter
