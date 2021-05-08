@@ -4,8 +4,8 @@ LABEL org.opencontainers.image.source https://github.com/RCristiano/Vim-aS-Code
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-ARG LANG=${LANG:-"en_US.UTF-8"}
-ARG LANGUAGE=${LANGUAGE:-"en_US:en"}
+ARG LANG=en_US.UTF-8
+ARG LANGUAGE=en_US:en
 
 ARG UNAME=Ahab
 ARG USER_ID=1001
