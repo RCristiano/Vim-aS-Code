@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-LABEL org.opencontainers.image.source https://github.com/catapimbas/QuestionBot-Admin
+LABEL org.opencontainers.image.source https://github.com/RCristiano/Vim-aS-Code
 
 ARG DEBIAN_FRONTEND=noninteractive
 
