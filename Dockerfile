@@ -34,7 +34,7 @@ RUN sh -c 'curl -sLo /home/"${UNAME}"/.local/share/nvim/site/autoload/plug.vim -
 
 COPY --chown=${USER_ID}:${GROUP_ID} . /home/${UNAME}/.config/nvim/
 
-RUN /usr/bin/nvim +'PlugInstall --sync' +qa
+RUN /usr/bin/nvim +'PlugInstall --sync' +qa &> /dev/null
 
 WORKDIR /mnt/workdir
 
