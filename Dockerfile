@@ -8,8 +8,8 @@ ARG LANG=en_US.UTF-8
 ARG LANGUAGE=en_US:en
 
 ARG UNAME=Ahab
-ARG USER_ID=1001
-ARG GROUP_ID=1001
+ARG USER_ID=1000
+ARG GROUP_ID=1000
 
 RUN apt-get update && \
     apt-get -yq install git curl nodejs neovim gnupg2 universal-ctags locales fonts-powerline python3-pip && \
