@@ -30,11 +30,15 @@ NeoVim inspired by VSCode
 - [vim-plug](https://github.com/junegunn/vim-plug/)
 - [nodejs](https://nodejs.org/en/)
 - [yarn](https://classic.yarnpkg.com/)
-- [python3](https://www.python.org/)
-- [pynvim](https://github.com/neovim/pynvim)
+- [python3.9](https://www.python.org/)
+  - [python3.9-venv](https://docs.python.org/3.9/library/venv.html)
+  - [pynvim](https://github.com/neovim/pynvim)
+  - [python-language-server](https://github.com/palantir/python-language-server) *optional
+    - jedi *optional (?)
 - [git](https://git-scm.com/)
 - [fonts-powerline](https://github.com/powerline/fonts)
 - [universal-ctags](https://github.com/universal-ctags/ctags)
+- [ripgrep (rg)](https://github.com/BurntSushi/ripgrep)
 
 Some language especific extensions have its own requirements
 
@@ -44,9 +48,11 @@ Some language especific extensions have its own requirements
 
     ```sh
     sudo apt-get update
-    sudo apt-get install -y git curl nodejs neovim python3 python3-pip fonts-powerline universal-ctags
+    sudo apt-get install -y git curl nodejs neovim python3.9 python3.9-venv fonts-powerline universal-ctags ripgrep
 
-    pip3 install -U pynvim
+    bash -c 'python3.9 -m venv --upgrade-deps ~/.virtualenvs/neovim/py3 && \
+    source ~/.virtualenvs/neovim/py3/bin/activate && \
+    pip install -U pynvim jedi python-language-server'
 
     sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -71,7 +77,7 @@ Some language especific extensions have its own requirements
 ### Python
 
 ```sh
-nvim +'CocInstall coc-python'
+nvim +'CocInstall coc-pyright'
 ```
 
 ### GO
@@ -98,6 +104,15 @@ and paste the content present in `coc-settings.json` present in this repo.
 nvim +`CocInstall coc-elixir`
 ```
 
+## Mappings (WIP)
+
+| keymap    | Type        | Description                |
+| :-------- | :---------- | :------------------------- |
+| `<C-B>`   | NERDTree    | File explorer toggle       |
+| `<C-J>`   | Floaterm    | Integrated terminal toggle |
+| `F3`      |             | Numbers toggle format      |
+| `F4`      |             | Numbers toggle on/off      |
+| `F8`      |             | TagBar toggle              |
 
 ## Docker
 
@@ -113,3 +128,7 @@ docker build . -t vim \
  # Then run, you can change $PWD to any dir
 docker run --it -v $PWD:/mnt/workdir vimascode
 ```
+
+Substituir coc por language servers
+Floaterm possui uma integração interesante com o fzf
+https://www.vimfromscratch.com/articles/vim-for-python/
