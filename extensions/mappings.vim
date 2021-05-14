@@ -2,14 +2,15 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-nnoremap <silent> <C-k><C-B> :NERDTreeToggle<CR>
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+nnoremap <silent> <C-B> :NERDTreeToggle<CR>
 
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :NumbersOnOff<CR>
 
+" nnoremap <silent> <leader>f :Leaderf file<CR>
 nnoremap <silent> <leader>l :Leaderf command<CR>
 nnoremap <silent> <leader>t :Leaderf bufTag<CR>
 
@@ -30,6 +31,11 @@ nmap <silent> <leader>[ :bprevious<CR>
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
 nmap <silent> <leader>} :bp <BAR> bd #<CR>
+" nmap <silent> <c-w> :bp <BAR> bd #<CR>
 
 " Show all open buffers and their status
 " nmap <leader>bl :ls<CR>
+
+" Floaterm Integrated terminal
+let g:floaterm_keymap_toggle = '<F12>'
+nmap <silent> <C-J> :FloatermNew --wintype=split --height=10 $SHELL<CR>
