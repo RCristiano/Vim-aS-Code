@@ -108,8 +108,8 @@ nvim +`CocInstall coc-elixir`
 
 | keymap    | Type        | Description                |
 | :-------- | :---------- | :------------------------- |
-| `<C-B>`   | NERDTree    | File explorer toggle       |
-| `<C-J>`   | Floaterm    | Integrated terminal toggle |
+| `Ctrl+b`   | NERDTree    | File explorer toggle       |
+| `Ctrl+j`   | Floaterm    | Integrated terminal toggle |
 | `F3`      |             | Numbers toggle format      |
 | `F4`      |             | Numbers toggle on/off      |
 | `F8`      |             | TagBar toggle              |
@@ -118,7 +118,7 @@ nvim +`CocInstall coc-elixir`
 
 ```sh
  # Build from local
-docker build . -t vim \
+docker build . -t vimascode \
     --build-arg LANG \
     --build-arg LANGUAGE \
     --build-arg UNAME=$(whoami) \
@@ -129,6 +129,6 @@ docker build . -t vim \
 docker run --it -v $PWD:/mnt/workdir vimascode
 ```
 
-Substituir coc por language servers
-Floaterm possui uma integração interesante com o fzf
+- [] Substituir coc por language servers
+- [] Floaterm possui uma integração interesante com o fzf
 https://www.vimfromscratch.com/articles/vim-for-python/
